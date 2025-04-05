@@ -4,6 +4,7 @@
 <title>Mon Exercice JS N°2</title>
 <script>
 
+/* Ex 1
 function afficher(){
 	
 	var saisie = parseInt(document.getElementById('V1').value);
@@ -19,6 +20,48 @@ function afficher(){
 	document.getElementById('result').innerHTML = resultat;
 
 }
+*/
+
+/* Ex 2
+function afficher() {
+  var saisie = parseInt(document.getElementById("V1").value);
+  var resultat = "";
+
+  for (j = 0; j < saisie; j++) {
+    for (i = saisie; i > j; i--) {
+      resultat += "*";
+    }
+    resultat += "</br>";
+  }
+
+  document.getElementById("result").innerHTML = resultat;
+}
+*/
+
+/* Exo 3
+function afficher() {
+  var saisie = parseInt(document.getElementById("V1").value);
+  var resultat = "";
+
+  for (j = 0; j < saisie; j++) { 
+    // Ajouter des espaces
+    for (i = saisie - 1; i > j; i--) {
+      resultat += "&nbsp;&nbsp;";
+    }
+
+    // Ajouter des étoiles
+    for (i = 0; i <= j; i++) {
+      resultat += "*";
+    }
+
+    // Ajouter un retour à la ligne après chaque ligne de motifs
+    resultat += "</br>";
+  }
+
+  document.getElementById("result").innerHTML = resultat;
+}
+*/
+
 
 </script>
 
